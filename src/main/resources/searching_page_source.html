@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бинарный поиск на сервлетах</title>
+</head>
+<body>
+<h3 align="center">вы ввели число %s. Угадал?</h3>
+<table align="center">
+    <tr>
+        <td>
+            <form action="/searching_page" method="post">
+                <p align="center"><input type="submit" name="answer" value="меньше"></p>
+            </form>
+        </td>
+        <td>
+            <form action="/victory_page" method="post">
+                <p align="center"><input type="submit" value="угадал!"></p>
+            </form>
+        </td>
+        <td>
+            <form action="/searching_page" method="post">
+                <p align="center"><input type="submit" name="answer" value="больше"></p>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
