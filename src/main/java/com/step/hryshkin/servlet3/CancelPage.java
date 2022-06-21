@@ -5,8 +5,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = {"/homepage"})
-public class HomePage extends HttpServlet {
+@WebServlet(urlPatterns = {"/cancel_page"})
+public class CancelPage extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
@@ -19,7 +19,7 @@ public class HomePage extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
         try {
-            resp.getWriter().println(ResourceReader.webPageContentToString("homepage_source.html"));
+            resp.getWriter().println(ResourceReader.webPageContentToString("cancel_page_source.html"));
         } catch (Exception e) {
             e.printStackTrace();
         }
